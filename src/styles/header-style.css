@@ -1,0 +1,32 @@
+
+#header-de {
+    position: relative;
+    display: none; 
+}
+#header-en{
+    position: relative;
+    display: block; 
+}
+
+/* Style for the language switcher to make it look like a link */
+.language-switcher {
+    font-size: 14px; /* Adjust the size as needed */
+    color: #007bff; /* Link-like color */
+    text-decoration: none; /* Remove underline */
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Add hover effect for better UX */
+.language-switcher:hover {
+    text-decoration: underline;
+}
+
+/* Position the language switcher at the top-right of the header */
+ul#header-en li:last-child,
+ul#header-de li:last-child {
+    position: absolute;
+    top: 0;
+    right: 10px; /* Adjust based on your preference */
+}

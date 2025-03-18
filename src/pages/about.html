@@ -4,6 +4,7 @@
         <title>About me</title>
         <link rel="stylesheet" href="../style.css"/>
         <link rel="stylesheet" href="../styles/about-page-style.css"/>
+        <link rel="stylesheet" href="../styles/header-style.css"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,300;0,500;0,800;1,100;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,500;0,800;1,100;1,600&" rel="stylesheet">
@@ -19,7 +20,6 @@
                 <li><a href="/src/pages/contact-me.html">Contact</a></li>
             </ul>
         </header>
-        
 
         <div class="about-wrapper">
             <div class="about-left">
@@ -31,16 +31,16 @@
                             </div>
                         </div>
 
-                        <h2>Lisa <br> Salewsky</h2>
+                        <h2>Lisa <br> Ginter</h2>
                         <h3>Full-Stack Developer</h3>
                     </div>
                     <div class="about-bg-insert"></div>
 
                     <ul class="icons">
-                        <li> <a href="https://www.linkedin.com/in/lisa-salewsky-708a84196/"></a><i class="fab fa-linkedin"></a></i></li>
-                        <li> <a href="https://github.com/LisaSalewsky"><i class="fab fa-github"></i></a></li>
-                        <li> <a href="https://www.xing.com/profile/Lisa_Salewsky"><i class="fab fa-xing"></i></a></li>
-                        <li> <a href="https://www.instagram.com/lisairina.hanako/"><i class="fab fa-instagram"></i></a></li>
+                        <li> <a id="linkedin-link" href="#"></a><i class="fab fa-linkedin"></a></i></li>
+                        <li> <a id="github-link" href="#"><i class="fab fa-github"></i></a></li>
+                        <li> <a id="xing-link" href="#"><i class="fab fa-xing"></i></a></li>
+                        <li> <a id="insta-link" href="#"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <div class="about-bg-insert"></div>
                 </div>
@@ -51,7 +51,7 @@
                 <h2>Here are some information about who I am & what I do </h2>
                 <div class="about-btns">
                     <a href="../pdfs/CV_german.pdf" download="Salewsky_CV_german"><button type="button" class="btn btn-red">CV</button></a>
-                    <a href="https://github.com/LisaSalewsky"><button type="button" class="btn btn-red">projects</button></a>
+                    <a id="github-link" href="#"><button type="button" class="btn btn-red">projects</button></a>
                     <a href="../pages/stack.html"><button type="button" class="btn btn-red">skills</button></a>
                     <a href="../pages/blog.html"><button type="button" class="btn btn-red">blog</button></a>
                 </div>
@@ -64,10 +64,15 @@
                         <br>
                         During my first semester, I knew I needed more than only theoretical knowledge, so I started working as a working student.
                         My first employer - ITS Informationstechnik Service GmbH and Lovion GmbH - offered me a lot.
-                        I got to experience working in a team, planning, designing and implementing software and overall lerning not only about coding but also abput project management.
+                        I got to experience working in a team, planning, designing and implementing software and overall lerning not only about coding but also about project management.
                         Later, for the last two years of my student years, I started working for the Fraunhofer IML Institute, again as a working student.
                         There, I got to learn about the different structures and policies in a government funded insitute vs a company.
                         In both jobs, I was able to do some project management tasks, got to do a lot of implementing and was able to learn at lot!
+                        
+                        <br>
+                        Currently, I work at the Kassenärztliche Vereinigung Nordrhein as a software developer.
+                        Besides writing rules to check whether bills match given standards and regulations, I also implement interface components for more complex tasks and internally needed tools to automate or simplify the workflow.
+                        Additionally, I worked on documentation as well as gathering and joining already existing documentations. 
                     </p>
                 </div>
             </div>
@@ -112,12 +117,8 @@
     </div>
 
         
-        <footer class="sub-pages-footer">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/lisa-salewsky-708a84196/">LI</a></li>
-                <li><a href="https://github.com/LisaSalewsky">GH</a></li>
-            </ul>
-            <div><i class="fa fa-copyright"></i> 2024 Lisa Salewsky</div>
-            <div><a href="/src/pages/impressum-datenschutz.html">Impressum & Datenschutz</a></div>
-        </footer>
+        <footer class="sub-pages-footer" id="sub-pages-footer"/>
+    
+        <script src="../scripts/insert-footer.js"></script>
+        <script src="../scripts/insert-header.js"></script>
     </body>
