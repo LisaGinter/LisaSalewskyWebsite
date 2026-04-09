@@ -4,18 +4,22 @@
         <title>About me</title>
         <link rel="stylesheet" href="../style.css"/>
         <link rel="stylesheet" href="../styles/about-page-style.css"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,300;0,500;0,800;1,100;1,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,500;0,800;1,100;1,600&" rel="stylesheet">
         <script src="https://kit.fontawesome.com/86c6b473ff.js" crossorigin="anonymous"></script>
+        <script src="../scripts/insert-header.js"></script>
+        <script src="../scripts/insert-footer.js"></script>
     </head>
 
     
     <body>
-
-        <header id="header-de">
+        <header>
+          <ul>
+              <li><a href="/index-de.html">Home</a></li>
+              <li><a href="/src/pages/contact-me-de.html">Kontakt</a></li>
+            </ul>
         </header>
-        
 
         <div class="about-wrapper">
             <div class="about-left">
@@ -23,7 +27,7 @@
                     <div>
                         <div class="shadow">
                             <div class="about-img">
-                                <img src="../images/Lisa Salewsky 2020.jpg" alt="picture of Lisa Salewsky">
+                                <img src="../images/Lisa Salewsky 2020.jpg" alt="Bild von Lisa Ginter">
                             </div>
                         </div>
 
@@ -33,10 +37,9 @@
                     <div class="about-bg-insert"></div>
 
                     <ul class="icons">
-                        <li> <a id="linkedin-link" href="#"></a><i class="fab fa-linkedin"></a></i></li>
-                        <li> <a id="github-link" href="#"><i class="fab fa-github"></i></a></li>
-                        <li> <a id="xing-link" href="#"><i class="fab fa-xing"></i></a></li>
-                        <li> <a id="insta-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li> <a id="linkedin-link" href="https://www.linkedin.com/in/lisa-ginter-708a84196/"></a><i class="fab fa-linkedin"></a></i></li>
+                        <li> <a id="github-link" href="https://github.com/LisaGinter"><i class="fab fa-github"></i></a></li>
+                        <li> <a id="insta-link" href="https://www.instagram.com/lisairina.hanako"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <div class="about-bg-insert"></div>
                 </div>
@@ -46,10 +49,10 @@
                 <h1>Hi!</h1>
                 <h2>Hier teile ich ein paar Informationen über mich & was ich tue </h2>
                 <div class="about-btns">
-                    <a href="../pdfs/CV_german.pdf" download="Salewsky_CV_german"><button type="button" class="btn btn-red">CV</button></a>
-                    <a id="github-link" href="#"><button type="button" class="btn btn-red">projects</button></a>
-                    <a href="../pages/stack-de.html"><button type="button" class="btn btn-red">skills</button></a>
-                    <a href="../pages/blog-de.html"><button type="button" class="btn btn-red">blog</button></a>
+                    <a href="../pdfs/Lebenslauf_Lisa_Ginter.pdf" download="Lebenslauf_Lisa_Ginter"><button type="button" class="btn btn-red">Lebenslauf</button></a>
+                    <a id="github-link" href="#https://github.com/LisaGinter"><button type="button" class="btn btn-red">Projekte</button></a>
+                    <a href="./stack-de.html"><button type="button" class="btn btn-red">Fähigkeiten</button></a>
+                    <a href="./blog-de.html"><button type="button" class="btn btn-red">Blog</button></a>
                 </div>
     
                 <div class="about-para">
@@ -68,10 +71,9 @@
                         Dort konnte ich Einblicke in die Unterschiede der Strukturen und Vorgaben bei einem öffentlichen Arbeitgeber im Vergleich zu einem Wirtschaftsunternehmen gewinnen.
                         Bei beiden Jobs konnte ich neben meinen Hauptaufgaben als Softwareentwicklerin verschiedene Projektleitungsaufgaben übernehmen und so eine Menge lernen!
                         <br>
-                        Aktuell bin ich bei der Kassenärztlichen Vereinigung Nordrhein angestellt, wo ich für verschiedene Entwicklungsaufgaben zuständig bin.
-                        Neben der Regelentwicklung zur Prüfung der Korrektheit von Abrechnungen entwickle ich auch interne Tools und Schnittstellenkomponenten, die erweiterte Aufgaben übernehmen.
-                        Außerdem bin ich mit für komplexe SQL-Abfragen zur internen Fehleranalyse zurständig.
-                        Auch das Dokumentieren, sowie das Zusammenfassen und Vereinheitlichen von vorhandenem Wissen sind Teil meiner Aufgaben.
+                        Aktuell bin ich bei der BarmeniaGothaer angestellt, wo ich für verschiedene Entwicklungsaufgaben im Schnittstellenteam zuständig bin.
+                        Im Vordergrund stehen aktuell eine REST-Schnittstelle zur Datenmigration sowie ein Batchprogramm zur Datenaufbereitung.
+                        Außerdem arbeite ich aber auch an weiteren Partner Kern-Komponenten, die allesamt Schnittstellen zu anderen Systemen anbieten.
                     </p>
                 </div>
             </div>
@@ -118,9 +120,7 @@
 
     </div>
 
-        
-        <footer class="sub-pages-footer" id="sub-pages-footer"/>
+
+    <footer class="sub-pages-footer" id="sub-pages-footer" />
     
-        <script src="../scripts/insert-footer.js"></script>
-        <script src="../scripts/insert-header.js"></script>
     </body>

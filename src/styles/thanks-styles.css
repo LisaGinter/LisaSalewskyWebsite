@@ -1,7 +1,8 @@
-
 .hero-section {
-    display: grid;
-    place-content: center;
-    text-align: center;
-    min-height: 500px;
+  display: grid;
+  place-content: center;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  text-align: center;
+  min-height: 61vh;
 }
