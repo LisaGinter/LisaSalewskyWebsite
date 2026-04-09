@@ -1,244 +1,246 @@
 :root {
-    --typewriterSpeed: 2s;
-    --typewirterWait: 1s;
-    --typewriterSteps: 21;
-    --blinkingSpeed: 1s;
-    --blinkingWait: 4.5s;
-    --socials-width: 100px;
-    --socials-width-small: 50px;
+  --typewriterSpeed: 2s;
+  --typewirterWait: 1s;
+  --typewriterSteps: 21;
+  --blinkingSpeed: 1s;
+  --blinkingWait: 4.5s;
+  --socials-width: 100px;
+  --socials-width-small: 50px;
 }
 
 .hero-section {
-    display: grid;
-    place-content: center;
-    text-align: center;
-    min-height: 500px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 500px;
 }
 
 .hero-section h1 {
-    font-size: clamp(4rem, 5vw + 1rem, 10rem );
-    font-family: "Source Code Pro", monospace;
+  font-size: clamp(4rem, 5vw + 1rem, 10rem);
+  font-family: "Source Code Pro", monospace;
 }
 
-.idx-page-visited-cookies 
-.main-content 
-.hero-section 
-.socials {
-    opacity: 0;
-    animation: fadeInUp 2s ease var(--blinkingWait) forwards;
+.idx-page-visited-cookies .main-content .hero-section .socials {
+  opacity: 0;
+  animation: fadeInUp 2s ease var(--blinkingWait) forwards;
 }
-
 
 .waves {
-    min-height: 365px;
-     /* height: 25vh;
+  min-height: 365px;
+  /* height: 25vh;
     position: fixed;
      */
-    left: 0;
-    bottom: 0; 
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 25vh;
-    z-index: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 25vh;
+  z-index: 0;
 }
 
 .wave {
-    fill: rgb(83, 10, 8);
-    opacity: 40%; 
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  fill: rgb(83, 10, 8);
+  opacity: 40%;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .wave2 {
-    fill: rgb(83, 10, 8);
-    opacity: 60%; 
-    width: 100vw;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  fill: rgb(83, 10, 8);
+  opacity: 60%;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .burger-menu {
-    display: none;
+  display: none;
 }
-
 
 @media screen and (max-width: 1039px) {
-    .wave {
-        height: 100%;
-    }
-    .wave2 {
-        height: 100%;
-    }
-     .hero-section{
-        width: calc(100vw - var(--socials-width) - var(--socials-width) );
-        margin: var(--socials-width);
-        padding-bottom: 100px;
-     }
-     
-     footer h2{
-        width: calc(100vw - var(--socials-width) - var(--socials-width) );
-        margin: 0px var(--socials-width);
-        padding: 0px;
-     }
-     
-    /* Show the burger menu and hide the socials */
-    .burger-menu {
-        align-content: center;
-        align-items: center;
-        display: block;
-        background: none;
-        border-radius: 50%;
-        color: rgb(231, 192, 173);
-        position: fixed;
-        right: 20px;
-        top: 30vh;
-        background-color: rgb(83, 10, 8);
-        border: none;
-        width: 2em;
-        height: 2em;
-        font-size: 24px;
-        cursor: pointer;
-        z-index: 2;
-        padding: 0;
-    }
+  .wave {
+    height: 100%;
+  }
+  .wave2 {
+    height: 100%;
+  }
+  .hero-section {
+    width: calc(100vw - var(--socials-width) - var(--socials-width));
+    margin: var(--socials-width);
+    padding-bottom: 100px;
+  }
 
-    .socials {
-        display: none;
-    }
+  footer h2 {
+    width: calc(100vw - var(--socials-width) - var(--socials-width));
+    margin: 0px var(--socials-width);
+    padding: 0px;
+  }
 
-    .socials.show {
-        display: block;
-        position: fixed;
-        right: 0;
-        top: 35vh;
-        width: var (--socials-width);
-        height: 320px;
-        background-color: rgb(231, 192, 173);
-        border-radius: 30px 0 0 30px;
-        box-shadow: -8px 8px 10px 2px rgba(0,0,0,0.4);
-        opacity: 1;
-    }
+  /* Show the burger menu and hide the socials */
+  .burger-menu {
+    align-content: center;
+    align-items: center;
+    display: block;
+    background: none;
+    border-radius: 50%;
+    color: rgb(231, 192, 173);
+    position: fixed;
+    right: 20px;
+    top: 30vh;
+    background-color: rgb(83, 10, 8);
+    border: none;
+    width: 2em;
+    height: 2em;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+  }
 
+  .socials {
+    display: none;
+  }
+
+  .socials.show {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 35vh;
+    width: var (--socials-width);
+    height: 320px;
+    background-color: rgb(231, 192, 173);
+    border-radius: 30px 0 0 30px;
+    box-shadow: -8px 8px 10px 2px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+  }
 }
 
-
 .wrapper {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .wrapper .dynamic-txt {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .dynamic-txt span {
-    position: relative;
+  position: relative;
 }
 
-
-.idx-page-visited-cookies 
-.main-content 
-.hero-section 
-.wrapper 
-.dynamic-txt span::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(231, 192, 173);
-    /* border-left: 2px solid rgb(83, 10, 8); */
-    animation: typing var(--typewriterSpeed) steps(var(--typewriterSteps)) 2s forwards,
+.idx-page-visited-cookies
+  .main-content
+  .hero-section
+  .wrapper
+  .dynamic-txt
+  span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(231, 192, 173);
+  /* border-left: 2px solid rgb(83, 10, 8); */
+  animation:
+    typing var(--typewriterSpeed) steps(var(--typewriterSteps)) 2s forwards,
     removeBar 0.1ms 4s forwards;
 }
 
-.idx-page-visited-cookies 
-.main-content 
-.hero-section 
-.wrapper 
-.dynamic-txt span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 0.125em;
-    background: rgb(83, 10, 8);
-    /* border-left: 2px solid rgb(83, 10, 8); */
-    animation: typing var(--typewriterSpeed) steps(var(--typewriterSteps)) 2s forwards,
-        blink 1s steps(var(--typewriterSteps)) infinite;
+.idx-page-visited-cookies
+  .main-content
+  .hero-section
+  .wrapper
+  .dynamic-txt
+  span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0.125em;
+  background: rgb(83, 10, 8);
+  /* border-left: 2px solid rgb(83, 10, 8); */
+  animation:
+    typing var(--typewriterSpeed) steps(var(--typewriterSteps)) 2s forwards,
+    blink 1s steps(var(--typewriterSteps)) infinite;
+}
+
+.icon li i {
+  letter-spacing: 0px;
 }
 
 @media screen and (max-width: 633px) {
-    .idx-page-visited-cookies 
+  .idx-page-visited-cookies
     .main-content
-    .hero-section 
-    .wrapper 
-    .dynamic-txt span::before {
-        animation: typing-small var(--typewriterSpeed) steps(var(--typewriterSteps))  2s forwards;
-    }
+    .hero-section
+    .wrapper
+    .dynamic-txt
+    span::before {
+    animation: typing-small var(--typewriterSpeed) steps(var(--typewriterSteps))
+      2s forwards;
+  }
 
-    .idx-page-visited-cookies 
-    .main-content 
-    .hero-section 
-    .wrapper 
-    .dynamic-txt span::after {
-        animation: typing-small var(--typewriterSpeed) steps(var(--typewriterSteps)) 2s forwards,
-            blink 1s steps(var(--typewriterSteps)) infinite;
+  .idx-page-visited-cookies
+    .main-content
+    .hero-section
+    .wrapper
+    .dynamic-txt
+    span::after {
+    animation:
+      typing-small var(--typewriterSpeed) steps(var(--typewriterSteps)) 2s
+        forwards,
+      blink 1s steps(var(--typewriterSteps)) infinite;
+  }
+  @keyframes typing-small {
+    to {
+      left: 110%;
     }
-    @keyframes typing-small {
-        to {
-            left: 110%;
-        }
-    }
+  }
 }
 
-.idx-page-visited-cookies 
-.waves {
-    opacity: 0;
-    animation: fadeInUp 2s ease var(--blinkingWait) forwards;
+.idx-page-visited-cookies .waves {
+  opacity: 0;
+  animation: fadeInUp 2s ease var(--blinkingWait) forwards;
 }
 
-.idx-page-visited-cookies 
-header{
-    opacity: 0;
-    animation: fadeInUp 2s ease var(--blinkingWait) forwards;
+.idx-page-visited-cookies header {
+  opacity: 0;
+  animation: fadeInUp 2s ease var(--blinkingWait) forwards;
 }
 
-.idx-page-visited-cookies 
-footer {
-    opacity: 0;
-    animation: fadeInUp 2s ease var(--blinkingWait) forwards;
+.idx-page-visited-cookies footer {
+  opacity: 0;
+  animation: fadeInUp 2s ease var(--blinkingWait) forwards;
 }
 
 @keyframes typing {
-    to {
-        left: 100%;
-        width: 0;
-    }
+  to {
+    left: 100%;
+    width: 0;
+  }
 }
 
 @keyframes blink {
-    to {
-        background-color: transparent;
-    }
+  to {
+    background-color: transparent;
+  }
 }
 
 @keyframes removeBar {
-    to {
-        background-color: transparent;
-        opacity: 0;
-        width: 0;
-    }
+  to {
+    background-color: transparent;
+    opacity: 0;
+    width: 0;
+  }
 }
 
 @keyframes fadeInUp {
-    to {
-        opacity: 1;
-        /* transform: translateY(100vh); */
-    }
+  to {
+    opacity: 1;
+    /* transform: translateY(100vh); */
+  }
 }
